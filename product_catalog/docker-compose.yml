@@ -1,0 +1,10 @@
+product_catalog_dev:
+  image: postgres
+  container_name: product_catalog_dev
+  environment:
+    POSTGRES_USER: postgres
+    POSTGRES_PASSWORD: postgres
+  volumes:
+    - ./data:/data/postgres
+  ports:
+    - '5432:5432'
